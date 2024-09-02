@@ -1,0 +1,132 @@
+.searchForm input {
+  outline: none;
+  padding: 7.2px;
+}
+
+.searchForm i {
+  position: relative;
+  right: 37px;
+  top: 1.5px;
+  height: 36px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px;
+}
+
+.Navbar {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+
+.Navbar .right {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.Navbar .right .bell {
+  position: relative;
+  top: -17px;
+}
+
+.Navbar .right .bell .fa-bell-o {
+  position: absolute;
+  font-size: 22px;
+  top: 15px;
+  left: -18px;
+  cursor: pointer;
+}
+
+.Navbar .right .bell .count {
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 21px;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Navbar .right .fa-moon-o {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.avata {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.Navbar .right .fa-user {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+/* hover */
+
+.bell .sp {
+  display: none;
+}
+
+.bell:hover .sp {
+  display: block; /* Show the paragraph when .linkedText is hovered */
+}
+
+.bell .sp {
+  font-size: 12px;
+  position: fixed;
+  top: 50px;
+  left: 990px;
+  border: 1px solid rgba(0, 0, 0, 0.157);
+  background-color: rgba(128, 128, 128, 0.259);
+  color: black;
+  /* display: block; */
+  width: 190px;
+  text-align: center;
+}
+/* hover2 */
+
+.hover .sp {
+  display: none;
+}
+
+.hover:hover .sp {
+  display: block; /* Show the paragraph when .linkedText is hovered */
+}
+
+.hover .sp {
+  font-size: 12px;
+  position: fixed;
+  top: 50px;
+  left: 1100px;
+  border: 1px solid rgba(0, 0, 0, 0.157);
+  background-color: rgba(128, 128, 128, 0.259);
+  color: black;
+  width: 190px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .searchForm input {
+    width: 170px;
+  }
+}
+
+@media (max-width: 340px) {
+  .searchForm i {
+    display: none;
+  }
+}

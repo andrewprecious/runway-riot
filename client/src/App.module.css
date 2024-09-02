@@ -1,0 +1,437 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* common styles */
+
+/* poppins font family */
+.poppinsThin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppinsExtralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppinsLight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppinsRegular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppinsMedium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppinsSemiBold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppinsBold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppinsExtraBold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppinsBlack {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppinsThinItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppinsExtraLightItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppinsLightItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppinsRegularItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppinsMediumItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppinsSemiBoldItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppinsBoldItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppinsExtraBoldItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppinsBlackItalic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+/* roboto font family */
+.robotoThin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.robotoLight {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.robotoRegular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.robotoMedium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.robotoBold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.robotoBlack {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.robotoThinItalic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.robotoLightItalic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.robotoRegularItalic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.robotoMediumItalic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.robotoBoldItalic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.robotoBlackItalic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.aladinRegular {
+  font-family: "Aladin", system-ui;
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.Georgia {
+  font-family: "Edwardian Script ITC", serif;
+  font-size: 70px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.476em;
+  color: #000;
+}
+
+.Zapfino {
+  font-family: "Zapfino", serif;
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: normal;
+  line-height: 1.476em;
+  color: #000;
+}
+
+.Alex {
+  font-family: "Alex Brush", cursive;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: normal;
+  line-height: 1.476em;
+  color: #000;
+  font-family: "Alex Brush", cursive;
+}
+
+.newAmsterdamRegular {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.engraversMT {
+  font-family: "Engravers MT", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.segoeScript {
+  font-family: "Segoe Script", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.Algerian {
+  font-family: "Algerian", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* colors and background colors */
+
+/* common css styles for my blog  */
+
+/* ==> text colors and bg colors */
+.bgWhite {
+  background-color: white;
+}
+
+.textWhite {
+  background-color: white;
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+.textBlack {
+  color: black;
+}
+
+.bgSparklingSilver {
+  background-color: #34c759;
+}
+
+.textSparklingSilver {
+  color: #34c759;
+}
+
+.bgBoldRed {
+  background-color: #ff3737;
+}
+
+.textBoldRed {
+  color: #ff3737;
+}
+
+.bgDarkGray {
+  background-color: #333333;
+}
+
+.textDarkGray {
+  color: #333333;
+}
+
+.bgLavendarGray {
+  background-color: #c7c5b8;
+}
+
+.textLavendarGray {
+  color: #c7c5b8;
+}
+
+.bgMintyFresh {
+  background-color: #b2fffc;
+}
+
+.textMintyFresh {
+  color: #b2fffc;
+}
+
+.bgCream {
+  background-color: #f5f5f5;
+}
+
+.textCream {
+  color: #f5f5f5;
+}
+
+.bgBlack {
+  background-color: black;
+}
+
+.textBlack {
+  color: black;
+}
+
+.bgRedOpacity {
+  background-color: #8f0a1a;
+}
+
+.textRedOpacity {
+  color: #8f0a1a;
+}
+
+.bgHotPink {
+  background-color: #ff69b4;
+}
+
+.textHotPink {
+  color: #ff69b4;
+}
+
+.bgUndefinedGreen {
+  background-color: #34a85a;
+}
+
+.textUndefinedGreen {
+  color: #34a85a;
+}
+
+.bgSweetCorn {
+  background-color: #f7dc6f;
+}
+
+.textSweetCorn {
+  color: #f7dc6f;
+}
+
+.bgLightSkyBlue {
+  background-color: #4cc9f0;
+}
+
+.textLightSkyBlue {
+  color: #4cc9f0;
+}
+
+.bgApproxAmberGold {
+  background-color: #ffc107;
+}
+
+.textApproxAmberGold {
+  color: #ffc107;
+}
+/* text/bg colors sec ends */
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.responsiveImg {
+  max-width: 100%;
+  height: auto;
+}
+
+.myBlogDesign {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  gap: 50px;
+}
+
+.mrg10 {
+  margin-top: 10px;
+}
+
+.noTextDecoration {
+  text-decoration: none;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mt15 {
+  margin-top: 200px;
+}
+
+.gridColumn2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.gridColumn3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 95%;
+  }
+
+  .myBlogDesign {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gridColumn2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .gridColumn3 {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 35px;
+  }
+}

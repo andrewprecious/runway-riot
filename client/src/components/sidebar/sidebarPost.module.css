@@ -1,0 +1,146 @@
+.captionPost {
+  border-left: 9px solid black;
+  background-color: white;
+  padding: 30px;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-left: 6px;
+  border-radius: 5px;
+}
+
+.recent {
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+.viewAll {
+  font-size: 18px;
+  background: linear-gradient(to bottom, blue 20%, #ff69b4 50%, #f7dc6f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+
+.card {
+  padding: 20px;
+}
+
+.cardInfo p {
+  color: rgba(128, 128, 128, 0.671);
+}
+
+.flexCardInfo {
+  display: flex;
+  gap: 20px;
+}
+
+.robotoBlack {
+  font-size: 20px;
+}
+
+.trendingPost {
+  display: flex;
+}
+
+.personal {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.sidebarPosts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  width: 260px;
+  border: 1px solid transparent;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.btnD {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker background on hover */
+}
+
+.text {
+  font-size: 23px;
+  width: 340px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.numberedList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: item;
+}
+
+.numberedListItem {
+  display: flex;
+  align-items: center;
+}
+
+.numberedListItem::before {
+  content: counter(item);
+  counter-increment: item;
+  margin-right: 0.5rem;
+  font-size: 80px;
+}
+
+.linkText {
+  font-size: 20px;
+  display: inline;
+  margin-left: 1px;
+}
+
+.captionPostChange {
+  border-left: 9px solid black;
+  background-color: white;
+  padding: 30px;
+  width: 50%;
+  margin-bottom: 20px;
+  margin-left: 6px;
+  border-radius: 5px;
+}
+
+@media (max-width: 1000px) {
+  .captionPost {
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  .text {
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+
+    -webkit-line-clamp: 1;
+    /* display: none; */
+  }
+
+  .numberedListItem::before {
+    font-size: 8px;
+    display: none;
+  }
+
+  .numberedList {
+    /* padding: 30px; */
+  }
+}

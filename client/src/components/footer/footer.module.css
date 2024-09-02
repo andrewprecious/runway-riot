@@ -1,0 +1,110 @@
+.navLogo {
+  font-family: "Aladin", system-ui;
+  font-weight: 500;
+  font-size: 200px;
+  text-decoration: none;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  color: white;
+  background: linear-gradient(to bottom, #ff69b4 50%, blue 30%, #f7dc6f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+.footer {
+  padding: 40px 40px;
+  background-color: rgba(0, 0, 0, 0.911);
+}
+
+.icons {
+  font-size: 30px;
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: white;
+  cursor: pointer;
+}
+
+.icons:hover {
+  background: linear-gradient(to bottom, #ff69b4 40%, blue 30%, #f7dc6f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.top {
+  width: 80%;
+}
+
+.middle div h1 {
+  color: white;
+}
+
+.middle div p {
+  color: white;
+  text-decoration: underline;
+}
+
+.last {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lastIcon {
+  display: flex;
+  gap: 15px;
+  text-decoration: none;
+}
+
+.lastIcon i {
+  font-size: 20px;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px;
+  background-color: rgba(128, 128, 128, 0.856);
+}
+
+.lastIcon i:hover {
+  background: linear-gradient(to bottom, blue 20%, #ff69b4 50%, #f7dc6f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+}
+
+.copyrightInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.copyrightInfo p {
+  color: white;
+}
+
+.search input {
+  outline: none;
+  padding: 7.2px;
+}
+
+.search i {
+  position: relative;
+  right: 37px;
+  top: 2px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: 1px solid transparent;
+  padding: 10px;
+}
+
+@media (max-width: 1000px) {
+  .top {
+    width: 100%;
+  }
+
+  .navLogo {
+    font-size: 70px;
+  }
+}

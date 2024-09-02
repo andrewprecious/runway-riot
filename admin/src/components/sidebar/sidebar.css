@@ -1,0 +1,106 @@
+.Sidebar {
+  border-right: 1px solid rgba(0, 128, 0, 0.157);
+}
+
+.sidebarTop {
+  text-align: center;
+  font-size: 28px;
+  color: black;
+  border-bottom: 1px solid rgba(0, 128, 0, 0.157);
+  padding: 10px;
+}
+
+.sidebarBottom {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  padding-left: 15px;
+  font-size: 14px;
+}
+
+.linkItem a {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+  margin-left: 20px;
+}
+
+.more {
+  margin-left: 25px;
+}
+
+.more a {
+  color: red;
+}
+
+.logout:hover {
+  color: red;
+}
+
+.main p {
+  color: gray;
+  font-size: 700;
+  text-align: center;
+  font-size: 24px;
+}
+
+.list .p {
+  color: gray;
+  font-size: 600;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 24px;
+}
+
+.linkItem i {
+  color: black;
+}
+
+#logout {
+  position: absolute;
+  bottom: 30px;
+}
+
+.mobileView {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktopView {
+    display: none;
+  }
+
+  .mobileView {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgba(0, 128, 0, 0.225);
+    gap: 10px;
+    overflow-x: auto;
+    position: relative;
+    top: 60px;
+  }
+
+  .mobileView .linkItem a span {
+    font-size: 10px;
+  }
+
+  .mobileView .linkItem a {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Sidebar {
+    position: absolute;
+    bottom: 10px;
+    width: 106.5%;
+  }
+}

@@ -1,0 +1,123 @@
+.registerPage h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 15px;
+}
+
+/* eye  */
+
+/* .eye {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+} */
+
+.btnDiv {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.btnDiv a {
+  width: 80px;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+}
+
+.striked {
+  color: red; /* Strike-through color */
+  text-decoration: line-through;
+}
+
+.eye {
+  position: relative;
+  bottom: 46px;
+  left: 440px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.registerPage {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.bkgImg {
+  position: relative;
+  height: 100vh;
+  background-image: url("https://rb.gy/5urqyt");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+  overflow: hidden;
+}
+
+/* .eye {
+ 
+} */
+
+.formContainer {
+  width: 40%;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.formContainer input {
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  padding: 13px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.formContainer textarea {
+  border-radius: 5px;
+  border: 1px solid lightgray;
+  outline: none;
+  height: 200px;
+}
+
+.formContainer button {
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #b8b5b5;
+  padding: 10px 10px;
+}
+
+@media (max-width: 1200px) {
+  .eye {
+    position: relative;
+    bottom: 46px;
+    left: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .formContainer {
+    width: 70%;
+  }
+}
+
+@media (max-width: 500px) {
+  .formContainer {
+    width: 90%;
+  }
+}

@@ -1,0 +1,14 @@
+.robotoRegular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Zapfino {
+  font-family: "Zapfino", serif;
+  font-size: 36px;
+  font-weight: bolder;
+  letter-spacing: normal;
+  line-height: 1.476em;
+  color: #000;
+}

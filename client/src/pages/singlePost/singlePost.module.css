@@ -1,0 +1,39 @@
+.mrg15 {
+  margin-bottom: 20px;
+}
+
+.imgDesign img {
+  height: 400px;
+  width: 500px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .rightImg {
+    width: 340px;
+    height: 300px;
+    align-self: center;
+  }
+
+  .fontSmall {
+    font-size: 30px;
+  }
+
+  .fontSmaller {
+    font-size: 14px;
+  }
+
+  .fontSma {
+    font-size: 46px;
+    margin-left: 3px;
+  }
+
+  .sidebarImg {
+    width: 10%;
+  }
+
+  .space {
+    margin-top: 1000px;
+  }
+}
