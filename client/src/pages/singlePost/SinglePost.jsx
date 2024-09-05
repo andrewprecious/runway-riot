@@ -7,6 +7,7 @@ import homeStyles from "../home/home.module.css";
 import axios from "axios";
 import { Link, useLocation } from "react-router-dom";
 import { URL } from "../../App";
+import ReactMarkdown from "react-markdown";
 
 const SinglePost = () => {
   // Array of image URLs
@@ -138,7 +139,7 @@ const SinglePost = () => {
                   <div
                     className={`${SinglePostStyles.title}   ${appStyles.textBlack} ${appStyles.mrg10} ${SinglePostStyles.fontSmaller}`}
                   >
-                    {singlePost.body}
+                    <ReactMarkdown>{singlePost.body}</ReactMarkdown>
                   </div>
                 </Link>
               </div>

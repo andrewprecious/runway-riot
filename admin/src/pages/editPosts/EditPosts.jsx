@@ -2,11 +2,14 @@ import "./editPost.css";
 import axios from "axios";
 import { API_URL } from "../../App";
 import { useLocation, useNavigate } from "react-router-dom";
+import { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
 const EditPosts = () => {
   const location = useLocation();
   const navigate = useNavigate();
   const id = location.pathname.split("/")[2];
+  console.log("Post ID:", id);
 
   const [formData, setFormData] = useState({
     title: "",
@@ -24,7 +27,11 @@ const EditPosts = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const response = await axios.get(`${API_URL}/blog/post/${id}`);
+        const response = await axios.get(`${API_URL}/blog/singlePost/${id}`);
+        if (response.status === 404) {
+          setError("Post not found.");
+          return;
+        }
         setFormData({
           title: response.data.title,
           image: response.data.image,
@@ -132,6 +139,11 @@ const EditPosts = () => {
             onChange={handleChange}
             required
           />
+
+          <div className="markdown-preview">
+            <h4>Preview:</h4>
+            <ReactMarkdown>{formData.body}</ReactMarkdown>
+          </div>
         </div>
 
         <div className="inputForm">

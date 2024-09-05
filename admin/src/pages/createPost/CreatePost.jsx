@@ -4,6 +4,7 @@ import axios from "axios";
 import { API_URL } from "../../App";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
+import ReactMarkdown from "react-markdown";
 
 const CreatePost = () => {
   const [formData, setFormData] = useState({
@@ -114,7 +115,7 @@ const CreatePost = () => {
 
           <div className="inputForm">
             <label htmlFor="body">Body</label>
-            <input
+            <textarea
               type="text"
               className="formGroup"
               name="body"
@@ -123,6 +124,11 @@ const CreatePost = () => {
               onChange={handleChange}
               required
             />
+
+            <div className="markdown-preview">
+              <h4>Preview:</h4>
+              <ReactMarkdown>{formData.body}</ReactMarkdown>
+            </div>
           </div>
 
           <div className="inputForm">
